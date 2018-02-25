@@ -1,0 +1,67 @@
+#
+###################################
+# Site wide configuration
+####################################
+#
+title: Blog do Gabriel Feitosa
+email: gabfeitosa@gmail.com
+description: Show me the code!
+url: http://gabrielfeitosa.com # the base hostname & protocol for your site
+keywords: ["Desenvolvimento de Software", "Java", "Spring", "Spring Boot","Spring Cloud", "AngularJS", "Angular", "JavaScript", "CI", "Integração contínua", "DevOps", "Docker"]
+
+#
+###################################
+# Jekyll configuration
+####################################
+#
+timezone:          America/Sao_Paulo
+markdown:          kramdown
+highlighter:       rouge
+excerpt_separator: <!--more-->
+permalink:         /articles/:year-:month/:title
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+#
+###################################
+# Site Owner configuration
+####################################
+#
+owner:
+  name: Gabriel Feitosa
+  avatar: avatar.jpg
+  job: "Arquiteto de Software"
+  bio: ""
+  email: gabfeitosa@gmail.com
+  disqus-shortname: blog-do-gabriel-feitosa
+  twitter: gabriellf84 #username
+  facebook: #username
+  google:
+    plus: 
+    analytics: UA-65856211-1
+    verify: A0j8qC6aCGeOJa6peyytpoJ5vAaOj8s02SKmeRfcWzg
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: gabrielfeitosa #username
+  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  linkedin: gabrielfeitosa #username
+  xing: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+  codepen: #username
+  telegram: #username

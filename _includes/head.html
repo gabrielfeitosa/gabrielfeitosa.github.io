@@ -4,8 +4,8 @@
   {% capture title %}{{ site.title }}{% endcapture %}
 {% endif %}
 
-{% if page.excerpt %}
-  {% capture description %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% endcapture %}
+{% if page.description %}
+  {% capture description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% endcapture %}
 {% else %}
   {% capture description %}{{ site.description }}{% endcapture %}
 {% endif %}
@@ -38,7 +38,7 @@
   <link rel="stylesheet" href="{{ site.url }}/css/main.css">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.xml " | prepend: site.url }}" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.url }}" />
 
   <!-- Icons -->
   <!-- 16x16 -->

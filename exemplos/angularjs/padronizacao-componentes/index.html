@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>Blog do Gabriel Feitosa</title>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <style>
+        button {
+            color: #fefefe;
+            border-color: transparent;
+            margin: 7px;
+        }
+
+        button i.fa {
+            margin-right: 5px;
+        }
+
+        button.salvar {
+            background-color: #337ab7;
+        }
+
+        button.cancelar {
+            background-color: #d9534f;
+        }
+    </style>
+</head>
+
+<body ng-controller="Controller as ctrl">
+    <h1>AngularJS: Padronização dos componentes</h1>
+    <botao label="Padrão" click="ctrl.alertar('Padrão')"> </botao>
+    <br>
+    <botao tipo="salvar" label="Salvar" click="ctrl.alertar('Salvar')"> </botao>
+    <br>
+    <botao tipo="cancelar" label="Cancelar" click="ctrl.alertar('Cancelar')"> </botao>
+    <br>
+    <botao tipo="calendario" label="Calendário"> </botao>
+    <br>
+
+    <footer>
+        <hr/>
+        <a href="http://gabrielfeitosa.com"> Blog do Gabriel Feitosa</a>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

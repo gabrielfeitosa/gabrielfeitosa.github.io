@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Exemplo 2 - Blog do Gabriel Feitosa</title>
+    </head>
+    <body>
+        <h1>Entendendo os Controladores</h1>
+        <div ng-controller="MeuController">
+            <form>
+                <input type="text" ng-model="item" placeholder="Informe um item" />
+                <button ng-click="addItem()">Adicionar</button>
+            </form>
+            <br/>
+            <h1> Itens</h1>
+            <ul>
+                <li ng-repeat="i in itens track by $index">{{i}}</li>
+            </ul>
+        </div>
+        <footer>
+            <hr/>
+            <a href="http://www.gabrielfeitosa.com"> Blog do Gabriel Feitosa</a>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+        <script>
+		    var app = angular.module('app',[]);
+		    app.controller('MeuController',['$scope',function($scope){
+    			$scope.item = '';
+    			$scope.itens = [];
+    
+    			$scope.addItem = function(){
+    				$scope.itens.push($scope.item);
+    				$scope.item = '';
+    			}
+    		}]); 
+	
+	    </script>
+    </body>
+</html>

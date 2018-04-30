@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="app-filters">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Blog do Gabriel Feitosa > AngularJS: Filtros</title>
+</head>
+
+<body>
+
+    <h1>Filtros - Na View</h1>
+
+    <pre>Filtro <b>currency</b> {{<code>123456789 | currency</code>}} = {{ 123456789 | currency}}</pre>
+    <pre>Filtros <b>encadeados</b> {{<code>"1984-12-15T00:00" | date | uppercase</code>}} = {{ "1984-12-15T00:00" | date | uppercase}}</pre>
+    <pre>Filtro <b>date com parâmetro</b> {{<code> "1984-12-15T00:00" | date:'medium'</code>}} = {{ "1984-12-15T00:00" | date:'medium'}}</pre>
+    <footer>
+        <hr/>
+        <a href="http://www.gabrielfeitosa.com"> Blog do Gabriel Feitosa</a>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

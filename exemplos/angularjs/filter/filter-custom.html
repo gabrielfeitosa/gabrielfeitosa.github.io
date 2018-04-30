@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="app-filters">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Blog do Gabriel Feitosa > AngularJS: Filtros</title>
+</head>
+
+<body>
+
+    <h1>Filtros - Customizado</h1>
+    <input placeholder="Informe um CPF" ng-model="inputCPF"/>
+    {{inputCPF | cpf}}
+    <br><br>
+    <input placeholder="Nome do amigão do peito?" ng-model="amigo"/> 
+    {{ amigo | abestado:muito}}
+    <br>
+    <input type="checkbox" ng-model="muito"/> Seu amigo é muito abestado?
+    <footer>
+        <hr/>
+        <a href="http://www.gabrielfeitosa.com"> Blog do Gabriel Feitosa</a>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

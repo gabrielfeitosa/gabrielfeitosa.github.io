@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog do Gabriel Feitosa > AngularJS: Refresh Periódico</title>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/chat.css" rel="stylesheet">
+</head>
+
+<body ng-cloak>
+  <div class="container" ng-controller="ChatController">
+    <div class="row">
+      <div class="page-header">
+        <h1>Chat</h1>
+        <h6>Caso a aplicação esteja fora do ar, por favor me avise. A hospedagem do backend está no heroku e pode apresentar instabilidade.</h6>
+      </div>
+    </div>
+    <div class="row">
+      <form class="form-inline" ng-submit="chat.entrar()" event-focus="submit" event-focus-id="texto">
+        <div class="form-group" ng-if="!chat.isAberto()">
+          <input id="usuario" class="form-control" ng-model="usuario.nome" placeholder="Informe um usuário" required>
+          <button class="btn btn-primary btn-xs" type="submit">Entrar</button>
+        </div>
+        <div class="form-group" ng-if="chat.isAberto()">
+          Usuário: <b>{{usuario.nome}}</b>
+          <button class="btn btn-danger btn-xs" ng-click="chat.sair()" event-focus="click" event-focus-id="usuario">Sair</button>
+        </div>
+      </form>
+    </div>
+    <br>
+    <div class="row" ng-if="chat.isAberto()">
+      <h6>Próxima atualização será em {{chat.getContador()}} segundos.</h6>
+      <div class="message-wrap col-lg-12">
+        <div class="msg-wrap" scroll-glue>
+          <div class="media msg" ng-repeat="mensagem in chat.listar()">
+            <div class="media-body">
+              <small class="pull-right time"><i class="fa fa-clock-o"></i> {{mensagem.dataRegistro | date: 'dd/MM/yyyy HH:mm:ss'}}</small>
+              <h6 class="media-heading">{{mensagem.usuario}}</h6>
+              <small class="col-lg-10">
+                {{mensagem.texto}}
+              </small>
+            </div>
+          </div>
+        </div>
+        <form ng-submit="chat.cadastrar(usuario.nome,texto);texto=''">
+          <div class="send-wrap">
+            <input id="texto" class="form-control" ng-model="texto" placeholder="Escreva uma mensagem..." required maxlength="50">
+          </div>
+          <div class="btn-panel">
+            <a href="http://gabrielfeitosa.com" target="_blank" class="col-lg-3 btn send-message-btn" role="button">Blog do Gabriel Feitosa</a>
+            <button class="col-lg-4 text-right btn send-message-btn pull-right" type="submit"><i class="fa fa-plus"></i>Enviar Mensagem</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="scripts/focus.js"></script>
+    <script src="scripts/scrollglue.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/chat.factory.js"></script>
+</body>
+
+</html>

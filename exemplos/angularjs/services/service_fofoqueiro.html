@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8" />
+    <title>Blog do Gabriel Feitosa</title>
+    <style type="text/css">
+        button {
+            background-color: red;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Factory</h1>
+    <div ng-controller="FofoqueiroController as fofoqueiro">
+        <fieldset>
+            <legend>Fofoqueiro Controller</legend>
+            <input ng-model="mensagem" ng-change="fofoqueiro.fofocar(mensagem)" placeholder="Qual a fofoca de hoje?" />
+            <br>
+            <span>O fofoqueiro disse <b>{{fofoqueiro.falou()}}</b></span>
+        </fieldset>
+    </div>
+    <br>
+    <div ng-controller="VizinhoChatoController as vizinhoChato">
+        <fieldset>
+            <legend>Vizinho Chato Controller</legend>
+            <span>O vizinho chato ouviu: <b>{{vizinhoChato.escutou()}}</b></span>
+            <br>
+            <button style="" ng-click="vizinhoChato.espalhaFofoca()">Espalhar Fofoca</button>
+        </fieldset>
+    </div>
+    <footer>
+        <hr/>
+        <a href="http://www.gabrielfeitosa.com"> Blog do Gabriel Feitosa</a>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <script>
+        var app = angular.module('app', []);
+        app.controller('FofoqueiroController', ['MensagemFactory', function(Mensagem) {
+            var self = this;
+            self.falou = Mensagem.get;
+            self.fofocar = Mensagem.set;
+        }]);
+
+        app.controller('VizinhoChatoController', ['MensagemFactory', function(Mensagem) {
+            var self = this;
+            self.escutou = Mensagem.get;
+            self.espalhaFofoca = Mensagem.alertar;
+        }]);
+
+        app.factory('MensagemFactory', function($window) {
+            var mensagem = {
+                texto: ''
+            };
+
+            return {
+                get: function() {
+                    return mensagem.texto;
+                },
+                set: function(tx) {
+                    mensagem.texto = tx;
+                },
+                alertar: function() {
+                    $window.alert(mensagem.texto);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

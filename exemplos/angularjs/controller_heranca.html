@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Exemplo 3 - Blog do Gabriel Feitosa</title>
+        <style type="text/css">
+            div.heranca div {
+                padding: 5px;
+                border: solid 2px #000;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Entendendo os Controladores - Herança de $scope</h1>
+        <div class="heranca">
+            <div ng-controller="PaiController">
+                <p>Eu sou {{nome  +' '+ sobrenome}}!</p>
+                <div ng-controller="FilhoController">
+                    <p>Eu, {{nome +' '+ sobrenome}}, sou filho de {{$parent.nome +' '+$parent.sobrenome}} </p>
+                    <div ng-controller="NetoController">
+                        <p>Eu, {{nome  +' '+ sobrenome}}, sou filho de {{$parent.nome +' '+$parent.sobrenome}} e neto de {{$parent.$parent.nome +' '+$parent.$parent.sobrenome}} </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <hr/>
+            <a href="http://www.gabrielfeitosa.com"> Blog do Gabriel Feitosa</a>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+        <script>
+            var app = angular.module('app',[]);
+            
+            app.controller('PaiController',['$scope',function($scope){
+	            $scope.nome = 'Gabriel';
+	            $scope.sobrenome='Feitosa';
+            }]); 
+            
+            app.controller('FilhoController',['$scope',function($scope){
+	            $scope.nome = 'Lampião';
+            }]); 	
+            
+            app.controller('NetoController',['$scope',function($scope){
+	            $scope.sobrenome='Junior';
+            }]); 	
+        </script>
+    </body>
+</html>

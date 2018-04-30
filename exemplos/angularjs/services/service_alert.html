@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Blog do Gabriel Feitosa</title>
+    </head>
+    <body>
+        <h1>Usando o service $window</h1>
+        <!--Declaração do controlador AlertController e definição do nome que será usado para utilização 'ctrl'-->
+        <div ng-controller="AlertController as ctrl">
+            <fieldset>
+                <legend>Criador de alertas</legend>
+                <input ng-model="ctrl.alerta.mensagem" placeholder="Qual a mensagem de alerta?"/>
+                <br>
+                <button ng-click="ctrl.enviar()">Enviar</button>
+            </fieldset>
+        </div>
+        <footer>
+            <hr/>
+            <a href="http://www.gabrielfeitosa.com"> Blog do Gabriel Feitosa</a>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+        <script>
+		    var app = angular.module('app',[]);
+		    app.controller('AlertController',['$window',function($window){
+    			var self = this;
+                self.alerta = {mensagem: ''};
+
+                self.enviar = enviar;
+
+                function enviar(){
+                    $window.alert('Mensagem criada : '+self.alerta.mensagem);
+                }
+    		}]);
+	    </script>
+    </body>
+</html>

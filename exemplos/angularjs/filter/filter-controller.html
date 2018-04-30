@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="app-filters">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Blog do Gabriel Feitosa > AngularJS: Filtros</title>
+    <style type="text/css">
+        code{
+            background-color: #F0E68C;
+        }
+    </style>
+</head>
+
+<body ng-controller="ExemploController">
+
+    <h1>Filtros - No Controller</h1>
+
+    <pre>Filtro <b>currency</b> <code>$filter('currency')(123456789)</code> = {{moedaFormatada}}</pre>
+    <pre>Filtro <b>currencyFilter</b> <code>currencyFilter(123456789)</code> = {{moedaFormatada2}}</pre>
+    <pre>Filtro <b>date com parâmetro</b> <code>$filter('date')('1984-12-15T00:00','medium')</code> = {{ dataFormatada}}</pre>
+    <footer>
+        <hr/>
+        <a href="http://www.gabrielfeitosa.com"> Blog do Gabriel Feitosa</a>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers.js"></script>
+</body>
+</html>

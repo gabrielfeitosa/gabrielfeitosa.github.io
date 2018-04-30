@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8" />
+    <title>Blog do Gabriel Feitosa</title>
+  </head>
+  <body>
+    <h1>AngularJS: Validação de Formulário</h1>
+    <div ng-controller="CaixaController as vm">
+      <form name="form" novalidate ng-submit="vm.sacar()">
+        <table>
+          <tr>
+            <td>
+              Quanto vai sacar?
+            </td>
+            <td>
+              <input type="number" name="valor" ng-model="vm.valor" required saque-async>
+              <div ng-if="form.valor.$pending.saqueAsync">
+                Será que tem saldo nessa conta?
+              </div>
+              <div ng-if="form.valor.$invalid && form.valor.$touched" style="color:red">
+                <div ng-if="form.valor.$error.required">Valor do saque é obrigatório</div>
+                <div ng-if="form.valor.$error.saqueAsync">Vixe... Ta liso!</div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Senha:
+            </td>
+            <td>
+              <input type="password" name="senha" ng-model="vm.senha" required>
+              <div ng-if="form.senha.$invalid && form.senha.$touched" style="color:red">
+                <div ng-if="form.senha.$error.required">Senha é obrigatória</div>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <br>
+        <button type="submit" ng-disabled="!form.$valid">Sacar</button>
+      </form>
+    </div>
+    <footer>
+      <hr/>
+      <a href="http://www.gabrielfeitosa.com"> Blog do Gabriel Feitosa</a>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

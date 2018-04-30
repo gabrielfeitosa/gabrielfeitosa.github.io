@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--Declaração do módulo da aplicação-->
+<html ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <title>Exemplo 1 - Blog do Gabriel Feitosa</title>
+</head>
+
+<body>
+	<h1>Entendendo os Controladores</h1>
+	<!--Declaração do nosso MeuController-->
+	<div ng-controller="MeuController">
+	  <input type="text" ng-model="nome" placeholder="Diz teu nome aí" />
+	  <h1>Eita {{nome}}, o controlador setou o estado inicial do $scope.nome!</h1>
+	</div>
+	<footer>
+		<hr>
+		<a href="http://www.gabrielfeitosa.com"> Blog do Gabriel Feitosa</a>	
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+	<script>
+		//Declarando o módulo da aplicação	
+		var app = angular.module('app',[]);
+
+		//Declarando o construtor do MeuController
+		app.controller('MeuController',['$scope',function($scope){
+			$scope.nome = 'Gabriel';
+		}]); 
+	
+	</script>
+</body>
+
+</html>

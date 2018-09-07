@@ -17,20 +17,18 @@ tags:
 ---
 Fala galera, beleza?
 
-Recentemente estava fazendo uma consultoria, o tal do freela, e me deparei com uma situação boa. O desafio da empresa estava na necessitando de analisar os eventos trafegados para os exchanges no [rabbitmq](https://www.rabbitmq.com/) e gerar insumos para tomada de decisões.  
+Recentemente em uma consultoria auxiliei o time de desenvolvimento a utilizar o ElasticSearch e o Kibana para extrair métricas que pudessem auxiliar nas tomadas de decisões internas. A necessidade era bem simples, analisar alguns dados de alguns tópicos (_exchanges_) no [rabbitmq](https://www.rabbitmq.com/) e gerar insumos "relatórios".  
 
-Os eventos tinha diversas origens, em torno de 7 sistemas, que enviavam dados para o rabbitmq. Apesar de ter vários sistemas envolvidos, boa parte deles seguiam um padrão que dava para extrair informações e gerar relatórios dinâmicos. Os dados a serem extraidos eram bem simples, basicamente consistia em fazer contagem de eventos por tipo, verificar quem gera mais dados em determinado período de tempo, entre outros temas que não convém explorar aqui.
+Os eventos que seriam analizados tinham como origem 7 sistemas. Apesar de ter vários sistemas envolvidos, boa parte deles seguiam um padrão que dava para extrair informações e gerar relatórios dinâmicos. Os dados a serem extraidos eram bem simples, basicamente consistia em fazer contagem de eventos por tipo, verificar quem gera mais dados em determinado período de tempo, entre outros temas que não convém explorar aqui.
 
-O time de devs já tinha posto algumas ideias na mesa, entre elas a construção de um sistema para criar relatórios ou enviar os dados para um banco de dados e extrair as informaçoes com [ETL](https://pt.wikipedia.org/wiki/Extract,_transform,_load). Havia uma terceira opçao, porém já descartada, que seria alterar os sistemas origens e os dados serem retirados direto da fonte.
+Algumas possíveis soluções já estavam na mesa, entre elas a construção de um sistema para criar relatórios ou enviar os dados para um banco de dados e extrair as informaçoes com [ETL](https://pt.wikipedia.org/wiki/Extract,_transform,_load). Além disso, havia uma terceira opçao, porém já descartada, que seria alterar os sistemas origens e os dados serem retirados direto da fonte.
 
-Como eu já fazia "parte" da galera, resolvi opinar e verificar se uma quarta ideia menos intrusiva seria viável para o cenário deles. Então, sem mais delongas, o post de hoje vai ser como o ElasticSearch junto do Kibana ajudaram a das métricas para tomada de decisões com um custo bem baixo e em um tempo excessivamente pequeno. 
+Então, sem mais delongas, no post de hoje vou mostrar como o ElasticSearch e o Kibana ajudaram a dar métricas para tomada de decisões com baixo custo e em um tempo excessivamente pequeno. 
 <!--more-->
-
-Antes de mais nada, no post não vou abordar a leitura de dados do RabbitMQ. Para isso, temos vários post de referência internet afora. 
 
 ### Configurando o ElasticSearch
 
-Nossa primeira tarefa será configurar o ES. 
+Nossa primeira tarefa será configurar o ES.  
 A primeira ação necessária para o nosso teste é instalar o plugin [SonarQube Scanner for Jenkins](https://plugins.jenkins.io/sonar). Para isso, clique em **Manage Jenkins** > **Manage Plugins**. Uma vez o plugin instalado, vamos configurar o endereço do Sonar no menu **Manage Jenkins** > **Configure System.**
 
 ![Exemplo da configuração do SonarQube no Jenkins](/img/jenkins_sonar.png) 

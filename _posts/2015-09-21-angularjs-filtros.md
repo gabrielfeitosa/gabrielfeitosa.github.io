@@ -50,9 +50,9 @@ Os exemplos acima  podem ser vistos no gist abaixo e/ou rodando <a href="http:/
 
 <body>
     <h1>Filtros - Na View</h1>
-    <pre>Filtro currency {{<code>123456789 | currency</code>}} = {{ 123456789 | currency}}</pre>
-    <pre>Filtro encadeados {{<code>"1984-12-15T00:00" | date | uppercase</code>}} = {{ "1984-12-15T00:00" | date | uppercase}}</pre>
-    <pre>Filtro date com parâmetro {{<code>"1984-12-15T00:00" | date</code>}} = {{ "1984-12-15T00:00" | date:'medium'}}</pre>
+    <pre>Filtro currency {{123456789 | currency}} = {{ 123456789 | currency}}</pre>
+    <pre>Filtro encadeados {{"1984-12-15T00:00" | date | uppercase}} = {{ "1984-12-15T00:00" | date | uppercase}}</pre>
+    <pre>Filtro date com parâmetro {{"1984-12-15T00:00" | date}} = {{ "1984-12-15T00:00" | date:'medium'}}</pre>
     <footer>
         <hr/>
         <a href="http://www.gabrielfeitosa.com"> Blog do Gabriel Feitosa</a>

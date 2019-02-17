@@ -1,4 +1,5 @@
-<div class="box-sticky">
+<div id="box-sticky" class="box-sticky">
+    <button type="button" class="close" onclick="toggler('box-sticky');">Esconder</button>
     <blockquote class="twitter-tweet" data-lang="pt">
         <p lang="pt" dir="ltr">Galera, vou voltar a escrever para meu blog e gostaria de saber o que você mais gosta de
             ler em blog de desenvolvimento.</p>&mdash;
@@ -7,4 +8,9 @@
             2019</a>
     </blockquote>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script>
+        function toggler(divId) {
+            $("#" + divId).toggle();
+        }
+    </script>
 </div>

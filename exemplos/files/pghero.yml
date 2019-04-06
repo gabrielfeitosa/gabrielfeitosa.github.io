@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: "postgres"
+    ports:
+      - "5432:5432"
+  pghero:
+    image: ankane/pghero
+    environment:
+      DATABASE_URL: postgres://postgres:postgres@postgres:5432/postgres
+    ports:
+      - "8080:8080"

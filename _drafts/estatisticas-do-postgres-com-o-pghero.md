@@ -1,7 +1,7 @@
 ---
-title: Colhendo estatísticas do PostgreSql com o PgHero
+title: Estatísticas do PostgreSql com o PgHero
 layout: post
-permalink: colhendo-estatistica-do-postgressql-com-o-pghero
+permalink: estatistica-do-postgressql-com-o-pghero
 comments: true
 categories: [tools]
 tags: [database, bancodedados, postgres, pghero]  
@@ -17,11 +17,11 @@ Se você se identifica com isso, tanto quanto eu, então não se avexe. Neste po
 
 
 Segundo a definição do [repositório do projeto no github](https://github.com/ankane/pghero): 
-<blockquote>A performance dashboard for Postgres</blockquote>
+> A performance dashboard for Postgres
 
 Isso só é possível por causa do coletor de estatísticas do Postgres. Caso deseje entender mais desse universo, [acesse a documentação oficial do Postgres falando sobre o coletor de estatísticas](https://www.postgresql.org/docs/9.6/monitoring-stats.html).
 
-Com o PgHero, podemos descobrir quais as consultas estão levando mais tempo para serem executas, descobrir ausência de índices, quais as conexões estão ativas, além de outras tantas funcionalidades.
+Com o PgHero, podemos descobrir quais as consultas estão levando mais tempo para serem executas, se há ausência de índice em alguma query, quais conexões estão ativas, além de outras tantas funcionalidades.
 
 # Como usar
 
@@ -57,7 +57,7 @@ Caso queira ver mais detalhes sobre a instalação com o docker, [acesse a docum
 
 Apesar de ser uma análise bem superficial, a intenção é que você conheça e explore a ferramente. Ela é bem simples, tem me ajudado bastante no dia a dia.
 
-Você já usou? Quais as suas percepções? Conhece alguma ferramenta simular para Postgres ou para outro banco? Comenta aí para trocarmos uma ideia.
+Você já usou? Quais as suas percepções? Conhece alguma ferramenta similar para Postgres ou para outro banco? Comenta aí para trocarmos uma ideia.
 
 Por hoje é isso, espero que tenham gostado! Se curtiu, não deixe de compartilhar! 😉
 

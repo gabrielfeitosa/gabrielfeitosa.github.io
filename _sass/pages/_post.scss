@@ -79,6 +79,10 @@ section.post {
   }
 }
 
+.post-description{
+  font-size: 18px;
+}
+
 // Read more buttons
 
 a.read-more {
@@ -89,6 +93,7 @@ a.read-more {
 
 #post {
   padding-bottom: 50px;
+  font-size: 18px;
   .post-header {
     margin: 0 auto 50px;
   }

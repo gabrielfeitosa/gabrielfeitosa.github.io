@@ -5,6 +5,7 @@ permalink: estatistica-do-postgressql-com-o-pghero
 comments: true
 categories: [tools]
 tags: [database, bancodedados, postgres, pghero]  
+date: 2019-04-08T10:00:00Z
 ---
 Sabe aquelas consultas geradas automaticamente pelo seu framework ORM predileto? E aquelas queries "malucas" que fazemos e não verificamos o plano de execução? Estamos fazendo full scan na tabela ou usando o índice certo? Então, isso tudo pode onerar a saúde do banco de dados e ficamos sem entender o porque da aplicação está cada vez mais lenta.
 

@@ -1,5 +1,6 @@
 ---
 title: Simulando ambiente da AWS localmente com o LocalStack
+date: 2019-02-19T10:20:00Z
 layout: post
 permalink: simulando-aws-com-localstack
 comments: true

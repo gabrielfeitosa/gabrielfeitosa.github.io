@@ -17,7 +17,7 @@ tags:
 ---
 E aí galera, beleza?
 
-Hoje falaremos um pouco sobre as rotas (_<a href="https://docs.angularjs.org/api/ngRoute" target="_blank">ngRoute</a>_) do AngularJS. Nos posts anteriores falamos sobre <a href="http://gabrielfeitosa.com/angularjs-controladores/" target="_blank">controladores</a> e <a href="http://gabrielfeitosa.com/angularjs-services/" target="_blank">serviços</a>, se você ainda não está familiarizado com o framework recomendo a leitura.
+Hoje falaremos um pouco sobre as rotas (_<a href="https://docs.angularjs.org/api/ngRoute" target="_blank">ngRoute</a>_) do AngularJS. Nos posts anteriores falamos sobre <a href="https://gabrielfeitosa.com/angularjs-controladores/" target="_blank">controladores</a> e <a href="https://gabrielfeitosa.com/angularjs-services/" target="_blank">serviços</a>, se você ainda não está familiarizado com o framework recomendo a leitura.
 <!--more-->
 
 # Rotas &#8211; Para que servem?
@@ -208,7 +208,7 @@ Existe um outro módulo de rotas chamado <a href="https://github.com/angular-ui/
 
 Então é isso pessoal, espero que tenham curtido.
 
-Os arquivos do nosso exemplo podem ser visualizados na íntegra no <a href="https://gist.github.com/gabrielfeitosa/829c603b11f1988d1657" target="_blank">gist</a> ou no <a href="https://github.com/gabrielfeitosa/blog_exemplos/tree/master/angularjs/rotas/ngRoute" target="_blank">repositório de código</a> do blog. **<a href="http://gabrielfeitosa.com/exemplos/angularjs/rotas/ngRoute/#/animais" target="_blank">Aqui</a>** você pode ver a aplicação rodando.
+Os arquivos do nosso exemplo podem ser visualizados na íntegra no <a href="https://gist.github.com/gabrielfeitosa/829c603b11f1988d1657" target="_blank">gist</a> ou no <a href="https://github.com/gabrielfeitosa/blog_exemplos/tree/master/angularjs/rotas/ngRoute" target="_blank">repositório de código</a> do blog. **<a href="https://gabrielfeitosa.com/exemplos/angularjs/rotas/ngRoute/#/animais" target="_blank">Aqui</a>** você pode ver a aplicação rodando.
 
 Tem dúvidas, críticas ou sugestões? Deixe um comentário aí que terei o maior prazer em responder.
 

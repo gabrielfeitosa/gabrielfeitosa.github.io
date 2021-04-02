@@ -17,7 +17,7 @@ tags:
 ---
 E aí pessoal, beleza?
 
-No post [anterior](http://gabrielfeitosa.com/angularjs-controladores/) falamos sobre os controladores e boas práticas na sua utilização. Hoje vamos abordar um pouco sobre os _services._
+No post [anterior](https://gabrielfeitosa.com/angularjs-controladores/) falamos sobre os controladores e boas práticas na sua utilização. Hoje vamos abordar um pouco sobre os _services._
 
 ## Services - O que são? Para que servem?
 
@@ -34,7 +34,7 @@ Opa, espera aí! O _controller_ não é o lugar de controle da view? Logo, não
   
 ## Usando um _service_
   
-Agora que expliquei alguns conceitos sobre _services_, vamos exemplificar a utilização do _[$window](https://docs.angularjs.org/api/ng/service/$window)_. Para utilizá-lo você deve adicionar a dependência no componente (_controller, directive, filter ou service_) que dependerá do serviço. No exemplo abaixo, que pode ser visto rodando [aqui](http://gabrielfeitosa.com/exemplos/angularjs/services/service_alert.html), vamos exibir um alerta de uma mensagem informada pelo usuário:
+Agora que expliquei alguns conceitos sobre _services_, vamos exemplificar a utilização do _[$window](https://docs.angularjs.org/api/ng/service/$window)_. Para utilizá-lo você deve adicionar a dependência no componente (_controller, directive, filter ou service_) que dependerá do serviço. No exemplo abaixo, que pode ser visto rodando [aqui](https://gabrielfeitosa.com/exemplos/angularjs/services/service_alert.html), vamos exibir um alerta de uma mensagem informada pelo usuário:
 
 {% highlight html linenos%}       
 <!DOCTYPE html>
@@ -84,7 +84,7 @@ Na [API de referência](https://docs.angularjs.org/api) você pode verificar os
   
 Agora que já sabemos como usar, vamos criar um serviço próprio. Você é livre para definir qual o nome do seu serviço, mas aconselho **nunca** utilizar o símbolo **$** no começo do nome, pois os _services_ do AngularJS começam com **$**, o que pode gerar conflito. Há três maneiras de se criar um serviço (_factory_, _service_ e _provider_), **recomendo** que leia no [stackoverflow](http://stackoverflow.com/questions/15666048/service-vs-provider-vs-factory) a explicação dada por um usuário sobre as diferenças entre esses tipos.
 
-No exemplo abaixo, foi criado um serviço **MensagemFactory** utilizando o **_factory()_**. Essa factory está sendo usada por dois controladores distintos (**FofoqueiroController** e **VizinhoChatoController**). Ele pode ser visto rodando [aqui](http://gabrielfeitosa.com/exemplos/angularjs/services/service_fofoqueiro.html).
+No exemplo abaixo, foi criado um serviço **MensagemFactory** utilizando o **_factory()_**. Essa factory está sendo usada por dois controladores distintos (**FofoqueiroController** e **VizinhoChatoController**). Ele pode ser visto rodando [aqui](https://gabrielfeitosa.com/exemplos/angularjs/services/service_fofoqueiro.html).
 
 {% highlight html linenos%}  
 {% raw %}

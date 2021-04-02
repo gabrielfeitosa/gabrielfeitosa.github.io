@@ -62,7 +62,7 @@ A API exposta para uso consiste em:
 
 Agora vamos falar da parte que mais nos interessa. Mas antes, como não sou lá essas coisas na parte de design, peguei a base do template para o chat nesse link <a href="http://bootsnipp.com/snippets/featured/chat" target="_blank">aqui</a> óh.
 
-O gist abaixo apresenta a implementação da lógica necessária para realizar a atualização dos dados do nosso chat. O projeto completo pode ser visto no <a href="https://github.com/gabrielfeitosa/blog_exemplos/tree/master/angularjs/periodic_refresh" target="_blank">github</a> e rodando <a href="http://gabrielfeitosa.com/exemplos/angularjs/periodic_refresh/" target="_blank">aqui</a>.
+O gist abaixo apresenta a implementação da lógica necessária para realizar a atualização dos dados do nosso chat. O projeto completo pode ser visto no <a href="https://github.com/gabrielfeitosa/blog_exemplos/tree/master/angularjs/periodic_refresh" target="_blank">github</a> e rodando <a href="https://gabrielfeitosa.com/exemplos/angularjs/periodic_refresh/" target="_blank">aqui</a>.
 
 {% highlight javascript linenos%}
 (function() {

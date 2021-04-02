@@ -20,7 +20,7 @@ Você aí que às vezes sofre quando o usuário decide mudar o css de um compon
 
 Cansei de contar as vezes que precisei entrar em VÁRIAS telas do sistema e mudar como a tag do html ia ser renderizada ou alterar o seu comportamento padrão.  Alguns _devs_ tem uma velha desculpa: Ah Gabriel, mas tem a IDE para fazer isso por nós, o trabalho é mínimo!&#8230; Eu como um bom preguiçoso, não gosto é de ter trabalho algum.
 
-Então, é aqui que entra  as diretivas do AngularJS (já bloguei um pouco sobre elas <a href="http://gabrielfeitosa.com/angularjs-diretiva-para-controle-de-acesso/" target="_blank">aqui</a>). As diretivas poderão facilitar nossa vida (e muito!) quando se trata de padronizar o nosso sistema. Não seria legal mudar em um único lugar e ter a certeza que todo o sistema sofreu a alteração!?
+Então, é aqui que entra  as diretivas do AngularJS (já bloguei um pouco sobre elas <a href="https://gabrielfeitosa.com/angularjs-diretiva-para-controle-de-acesso/" target="_blank">aqui</a>). As diretivas poderão facilitar nossa vida (e muito!) quando se trata de padronizar o nosso sistema. Não seria legal mudar em um único lugar e ter a certeza que todo o sistema sofreu a alteração!?
 <!--more-->
 
 ## O exemplo
@@ -75,7 +75,7 @@ Podemos notar que o "pulo do gato" está na função **templateUrl** (linha 14).
 
 Assim, construir novos elementos e/ou alterar o comportamento de um já existente fica bem simples. No exemplo, adicionei uma confirmação da ação para o botão salvar.
 
-O código do exemplo pode ser encontrado no meu <a href="https://github.com/gabrielfeitosa/angularjs-padronizacao-componentes" target="_blank">github</a> e <a href="http://gabrielfeitosa.com/exemplos/angularjs/padronizacao-componentes/" target="_blank">aqui</a> tem o exemplo rodando.
+O código do exemplo pode ser encontrado no meu <a href="https://github.com/gabrielfeitosa/angularjs-padronizacao-componentes" target="_blank">github</a> e <a href="https://gabrielfeitosa.com/exemplos/angularjs/padronizacao-componentes/" target="_blank">aqui</a> tem o exemplo rodando.
 
 E você, como está fazendo essa **padronização** no seu projeto?
 

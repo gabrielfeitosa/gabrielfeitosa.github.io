@@ -15,7 +15,7 @@ tags:
   - maven
   - tools
 ---
-No post anterior, <a href="http://gabrielfeitosa.com/como-rodar-uma-aplicacao-java-com-o-docker/" target="_blank">Como rodar uma aplicação Java com o Docker</a>, falei um pouco sobre o uso de containers para subir uma aplicação desenvolvida com o framework <a href="https://projects.spring.io/spring-boot/" target="_blank">Spring Boot</a>. Agora que sabemos como criar uma imagem por meio da linha de comando, veremos como fazer isso pelo processo de build do <a href="https://maven.apache.org/" target="_blank">Maven</a>. Para isso, vamos usar o plugin <a href="https://github.com/spotify/docker-maven-plugin" target="_blank">docker-maven-plugin</a> desenvolvido pela galera do Spotify.
+No post anterior, <a href="https://gabrielfeitosa.com/como-rodar-uma-aplicacao-java-com-o-docker/" target="_blank">Como rodar uma aplicação Java com o Docker</a>, falei um pouco sobre o uso de containers para subir uma aplicação desenvolvida com o framework <a href="https://projects.spring.io/spring-boot/" target="_blank">Spring Boot</a>. Agora que sabemos como criar uma imagem por meio da linha de comando, veremos como fazer isso pelo processo de build do <a href="https://maven.apache.org/" target="_blank">Maven</a>. Para isso, vamos usar o plugin <a href="https://github.com/spotify/docker-maven-plugin" target="_blank">docker-maven-plugin</a> desenvolvido pela galera do Spotify.
 <!--more-->
 
 ## Alteração no pom

@@ -22,7 +22,7 @@ O post de hoje é sobre as diferenças entre o **$apply**, **$timeout**, **$eva
 
 ## $apply()
 
-Algumas vezes é necessário executar operações fora do escopo do AngularJS. No post sobre <a href="http://gabrielfeitosa.com/socketio-angularjs-comunicacao-realtime/" target="_blank">Socket.io e AngularJS: Comunicação em tempo real</a>, por exemplo, falei sobre a execução do $apply para poder atualizar o escopo do AngularJS todas as vezes que o _frontend_ recebia dados do _backend_ através do socket.io.
+Algumas vezes é necessário executar operações fora do escopo do AngularJS. No post sobre <a href="https://gabrielfeitosa.com/socketio-angularjs-comunicacao-realtime/" target="_blank">Socket.io e AngularJS: Comunicação em tempo real</a>, por exemplo, falei sobre a execução do $apply para poder atualizar o escopo do AngularJS todas as vezes que o _frontend_ recebia dados do _backend_ através do socket.io.
 
 Para que essas operações realizadas fora do escopo tenham efeito é preciso fazer com que o escopo do AngularJS seja atualizado. Então, uma das funções que executa esse papel é a $apply.
 
@@ -34,7 +34,7 @@ Outro ponto a ser mencionado é que o AngularJS possui um **único** ciclo. Isso
 
 ## $timeout()
 
-O $timeout é uma maneira mais fácil de resolver operações que são executadas fora do escopo do AngularJS. No post sobre <a href="http://gabrielfeitosa.com/angularjs-refresh-periodico/" target="_blank">AngularJS: Aplicação em tempo real – Refresh periódico</a> falei um pouco sobre ele, vale a pena conferir.
+O $timeout é uma maneira mais fácil de resolver operações que são executadas fora do escopo do AngularJS. No post sobre <a href="https://gabrielfeitosa.com/angularjs-refresh-periodico/" target="_blank">AngularJS: Aplicação em tempo real – Refresh periódico</a> falei um pouco sobre ele, vale a pena conferir.
 
 Uma grande vantagem dessa função é que não receberemos a exceção de que o ciclo do AngularJS está em progresso. Por baixo dos panos, o $timeout informa ao _framework_ que ao terminar o ciclo atual há um _timeout_ esperando para ser executado. Assim, não haverá conflito entre o ciclo atual e a execução do _timeout_.
 

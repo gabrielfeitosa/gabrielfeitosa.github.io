@@ -2,7 +2,7 @@
 title: 'localtunnel: Disponibilizando acesso a uma aplicação local'
 date: 2016-05-10T09:00:05+00:00
 layout: post
-guid: http://gabrielfeitosa.com/?p=502
+guid: https://gabrielfeitosa.com/?p=502
 permalink: /localtunnel-disponibilizando-acesso-uma-aplicacao-local/
 comments: true
 categories:

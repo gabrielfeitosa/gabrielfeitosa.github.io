@@ -25,7 +25,7 @@ Depois de um longo tempo  me dedicando a outros projetos, estou me reorganizand
 
 Começarei contando uma historinha&#8230; Sabe aquela velha frase &#8220;Na minha máquina esta aplicação roda&#8221;? Pois é, quem nunca passou por isso? Cansei das vezes em que precisei analisar o porquê de um sistema não subir em outro ambiente e, no final, o problema era uma simples configuração.
 
-No post de hoje, vamos aprender a rodar uma aplicação Java em um _container_ <a href="https://www.docker.com/" target="_blank">Docker</a>. Para isso, vou utilizar a _app_ desenvolvida no post sobre **<a href="http://gabrielfeitosa.com/integracao-continua-com-travis-e-heroku/" target="_blank">Integração contínua com Travis e Heroku</a>**.
+No post de hoje, vamos aprender a rodar uma aplicação Java em um _container_ <a href="https://www.docker.com/" target="_blank">Docker</a>. Para isso, vou utilizar a _app_ desenvolvida no post sobre **<a href="https://gabrielfeitosa.com/integracao-continua-com-travis-e-heroku/" target="_blank">Integração contínua com Travis e Heroku</a>**.
 
 Se você ainda não sabe o que é o Docker, dá uma espiada no post <a href="https://aws.amazon.com/pt/docker/" target="_blank">O que é o docker?</a>.
 <!--more-->

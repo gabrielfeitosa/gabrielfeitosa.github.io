@@ -2,7 +2,7 @@
 title: 'AngularJS: Diretiva para controle de acesso'
 date: 2016-05-23T10:19:59+00:00
 layout: post
-guid: http://gabrielfeitosa.com/?p=526
+guid: https://gabrielfeitosa.com/?p=526
 permalink: /angularjs-diretiva-para-controle-de-acesso/
 comments: true
 categories:
@@ -99,7 +99,7 @@ Para iniciar, vamos criar uma página <em>HTML</em> que exibirá os elementos (b
 
   <footer>
       <hr/>
-      <a href="http://gabrielfeitosa.com"> Blog do Gabriel Feitosa</a>
+      <a href="https://gabrielfeitosa.com"> Blog do Gabriel Feitosa</a>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
   <script src="js/app.js"></script>
@@ -159,7 +159,7 @@ A lógica de negócio da nossa diretiva só utiliza os parâmetros <strong><em>
   
 O <strong>attrs </strong>é utilizado para ter acesso ao valor do atributo permissaoAcesso e verificar se o conteúdo dele é <em>block</em>. Caso a condição seja verdadeira, iremos manipular o elemento através do parâmetro <em>element</em>. A ideia é bem simples: adicionamos ao elemento um atributo <em>disabled</em> para bloqueá-lo. Na sequência, incorporamos um elemento <em><strong>span</strong></em> com o ícone do <strong><em>Font Awesome</em></strong>, o que será feito através do <strong><em>element.append</em><em>.</em></strong>
   
-A Figura 1 exibe o resultado do uso da diretiva. O exemplo do código está rodando <a href="http://gabrielfeitosa.com/exemplos/angularjs/diretiva_permissao_acesso/index.html" target="_blank">aqui</a> e os fontes estão no <em><a href="https://github.com/gabrielfeitosa/angularjs-directive-access" target="_blank">github</a></em>.
+A Figura 1 exibe o resultado do uso da diretiva. O exemplo do código está rodando <a href="https://gabrielfeitosa.com/exemplos/angularjs/diretiva_permissao_acesso/index.html" target="_blank">aqui</a> e os fontes estão no <em><a href="https://github.com/gabrielfeitosa/angularjs-directive-access" target="_blank">github</a></em>.
 
 ![Resultado do uso da diretiva](/img/resultado_diretiva_acesso.png)
 

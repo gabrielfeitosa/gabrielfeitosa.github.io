@@ -5,7 +5,7 @@ permalink: principal-software-engineer
 comments: true
 categories: [career]
 tags: [career]  
-date: 2021-08-03T09:00:00Z
+date: 2021-08-02T16:00:00Z
 ---
 
 Em novembro de 2020, topei o desafio de assumir o papel de **Principal Software Engineer**. Porém, eu não tinha noção das responsabilidades que eu teria e o impacto que o meu trabalho traria para a organização, para meus colegas e para mim. De lá para cá, tem sido uma jornada de descobertas, adaptações e um processo de melhoria contínua sobre as minhas responsabilidades e o meu modo de enxergar as coisas. Tem sido um processo super desafiador, e vou compartilhá-lo com vocês.

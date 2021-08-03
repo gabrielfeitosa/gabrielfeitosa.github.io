@@ -35,7 +35,7 @@ kramdown:
 owner:
   name: Gabriel Feitosa
   avatar: avatar.jpg
-  job: "Software Developer"
+  job: "Principal Software Engineer"
   bio: ""
   email: gabfeitosa@gmail.com
   disqus-shortname: blog-do-gabriel-feitosa
@@ -64,4 +64,4 @@ owner:
   weibo: #username
   flickr: #username
   codepen: #username
-  telegram: #username
+  telegram: gabfeitosa

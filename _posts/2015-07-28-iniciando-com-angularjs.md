@@ -18,7 +18,7 @@ Vamos falar um pouco sobre [AngularJS](https://angularjs.org/)?
 
 Para quem não conhece ele é um framework JavaScript, com base no modelo de arquitetura Model View Whatever (MVW). Nasceu dentro do Google em meados de 2009, mais precisamente pelas mãos de Misko Hevery, ta aí o twitter dele [@mhevery](https://twitter.com/mhevery).
 
-Quando comecei a estudá-lo, uma das _features_ que me chamou bastante a atenção foi o **_[Two-way Data Binding](https://docs.angularjs.org/guide/databinding). _**Mas o que é esse tal de _Two-way Data Binding_? Ele é quem faz boa parte da mágica, já que é o responsável pela sincronização dos dados entre os controladores (_Model_) e os componentes de visão (_View_).<!--more-->
+Quando comecei a estudá-lo, uma das _features_ que me chamou bastante a atenção foi o **_[Two-way Data Binding](https://docs.angularjs.org/guide/databinding). _**Mas o que é esse tal de _Two-way Data Binding_? Ele é quem faz boa parte da mágica, já que é o responsável pela sincronização dos dados entre os controladores (_Model_) e os componentes de visão (_View_).
 
 Mas agora chega de história e bora espiar como ele funciona, o exemplo abaixo pode ser visto rodando <a href="http://plnkr.co/edit/XmYU3IakxpEWHqyR9SDX?p=preview" target="_blank">aqui</a>:
 

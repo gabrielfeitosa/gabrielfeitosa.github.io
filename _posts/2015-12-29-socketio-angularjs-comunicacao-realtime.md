@@ -21,7 +21,7 @@ tags:
 ---
 Fala galera, beleza?
 
-No último post falei um pouco sobre <a href="https://gabrielfeitosa.com/angularjs-refresh-periodico/" target="_blank">refresh periódico</a> com o AngularJS, quem ainda não leu ta perdendo, viu!? Corre e ler&#8230; =)
+No último post falei um pouco sobre <a href="https://gabrielfeitosa.github.io/angularjs-refresh-periodico/" target="_blank">refresh periódico</a> com o AngularJS, quem ainda não leu ta perdendo, viu!? Corre e ler&#8230; =)
 
 Após esse post, algumas pessoas falaram da questão do porquê não usei websocket!
 
@@ -35,7 +35,7 @@ Já ouviu falar sobre o <a href="http://socket.io/" target="_blank">socket.io</a
 
 ## Porquê o **socket.io?**
 
-Se você leu o post falando sobre <a href="https://gabrielfeitosa.com/angularjs-refresh-periodico/" target="_blank">refresh periódico</a>, mencionei o pooling que o twitter faz para verificar se há novas atualizações para o usuário. Porém, essa estratégia pode não ser eficaz para outros cenários. Por exemplo, um chat.
+Se você leu o post falando sobre <a href="https://gabrielfeitosa.github.io/angularjs-refresh-periodico/" target="_blank">refresh periódico</a>, mencionei o pooling que o twitter faz para verificar se há novas atualizações para o usuário. Porém, essa estratégia pode não ser eficaz para outros cenários. Por exemplo, um chat.
 
 Nos dias de hoje a maioria dos browsers já implementam o suporte a WebSockets (duvida? confere no <a href="http://caniuse.com/websockets" target="_blank">Can I Use</a>), porém a biblioteca do socket.io abstrai isso para nós! Devido essa abstração, resolvi falar sobre ele e não sobre websocket.
 

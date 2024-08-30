@@ -44,7 +44,7 @@ O código abaixo será a base do formulário das validações. Como podemos ver
       </form>
     </div>
     <footer>
-      <hr/><a href="http://www.gabrielfeitosa.com"> Blog do Gabriel Feitosa</a>
+      <hr/><a href="http://www.gabrielfeitosa.github.io"> Blog do Gabriel Feitosa</a>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script src="app.js"></script>
@@ -130,7 +130,7 @@ angular.module('app').directive('saqueAsync', function($timeout, $q) {
 });
 {% endhighlight %}
 
-A validação assíncrona tem uma exigência que é uma **promise**. Por esse motivo e para simular o servidor, utilizei o service **$timeout** (já falei sobre ele <a href="https://gabrielfeitosa.com/angularjs-refresh-periodico/" target="_blank">aqui</a>). O funcionamento dessa diretiva é bem semelhante a anterior, a diferença está no uso do **<a href="https://docs.angularjs.org/api/ng/type/ngModel.NgModelController#$asyncValidators" target="_blank">$asyncValidators</a>** em vez de **<a href="https://docs.angularjs.org/api/ng/type/ngModel.NgModelController#$validators" target="_blank">$validators</a>** e na exigência da promise, como dito anteriormente.
+A validação assíncrona tem uma exigência que é uma **promise**. Por esse motivo e para simular o servidor, utilizei o service **$timeout** (já falei sobre ele <a href="https://gabrielfeitosa.github.io/angularjs-refresh-periodico/" target="_blank">aqui</a>). O funcionamento dessa diretiva é bem semelhante a anterior, a diferença está no uso do **<a href="https://docs.angularjs.org/api/ng/type/ngModel.NgModelController#$asyncValidators" target="_blank">$asyncValidators</a>** em vez de **<a href="https://docs.angularjs.org/api/ng/type/ngModel.NgModelController#$validators" target="_blank">$validators</a>** e na exigência da promise, como dito anteriormente.
 
 Para verificar se a diretiva está fazendo a validação de forma assíncrona, podemos adicionar uma mensagem ao nosso html para ser exibida no momento da validação. Lembra que falei que o AngularJS fornece três status ($valid, $invalid e $pending) ? Pois é, agora é a hora de utilizarmos o **$pending.**
 
@@ -159,7 +159,7 @@ Perceba também que na diretiva da validação assíncrona eu forcei essa intera
 
 Na <a href="https://docs.angularjs.org/guide/forms" target="_blank">documentação oficial</a>, há outras funcionalidades que não abordei aqui para validar formulários. Vale muito a pena conferir!
 
-<a href="https://gabrielfeitosa.com/exemplos/angularjs/form-validation/index.html" target="_blank">Aqui </a>você poderá ver o código rodando. Os fontes estão <a href="https://github.com/gabrielfeitosa/angularjs-form-validation" target="_blank">aqui</a>.
+<a href="https://gabrielfeitosa.github.io/exemplos/angularjs/form-validation/index.html" target="_blank">Aqui </a>você poderá ver o código rodando. Os fontes estão <a href="https://github.com/gabrielfeitosa/angularjs-form-validation" target="_blank">aqui</a>.
 
 Então é isso galera, fazer validação com o angular é bem simples. Espero que tenham curtido.
 

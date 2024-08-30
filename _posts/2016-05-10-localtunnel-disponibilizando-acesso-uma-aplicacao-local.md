@@ -2,7 +2,7 @@
 title: 'localtunnel: Disponibilizando acesso a uma aplicação local'
 date: 2016-05-10T09:00:05+00:00
 layout: post
-guid: https://gabrielfeitosa.com/?p=502
+guid: https://gabrielfeitosa.github.io/?p=502
 permalink: /localtunnel-disponibilizando-acesso-uma-aplicacao-local/
 comments: true
 categories:
@@ -66,7 +66,7 @@ E a URL gerada será **https://blogdogabrielfeitosa.localtunnel.me**.
 Só que não para por ai, ainda podemos criar um proxy para um host externo ao **localhost** através do parâmetro <span class="symple-highlight symple-highlight-blue "><strong> -local-host </strong></span>.
 
 ```bash
-$ lt -port 8080 -subdomain blogdogabrielfeitosa -local-host gabrielfeitosa.com
+$ lt -port 8080 -subdomain blogdogabrielfeitosa -local-host gabrielfeitosa.github.io
 ```
 
 Como vimos neste post o uso do localtunnel é bem simples e prático. É um módulo muito útil quando precisamos disponibilizar alguma aplicação da máquina sem complicação. Também há outro sistema de túnel muito bom, o <a href="https://ngrok.com/" target="_blank">ngrok</a>, mas ele vai ficar para a próxima!

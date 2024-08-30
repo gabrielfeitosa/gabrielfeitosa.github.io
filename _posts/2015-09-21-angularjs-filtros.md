@@ -36,7 +36,7 @@ Os filtros podem ser utilizados encadeados, ou seja, o resultado de um pode serv
 
 Eles ainda podem receber parâmetros, como **{% raw %}{{ &#8220;1984-12-15T00:00&#8221; &#124; date: &#8216;medium&#8217; }} {% endraw %}**e sua respectiva saída **Dec 15, 1984 12:00:00 AM**.
 
-Os exemplos acima  podem ser vistos no gist abaixo e/ou rodando <a href="https://gabrielfeitosa.com/exemplos/angularjs/filter/filter-view.html" target="_blank">aqui</a>.
+Os exemplos acima  podem ser vistos no gist abaixo e/ou rodando <a href="https://gabrielfeitosa.github.io/exemplos/angularjs/filter/filter-view.html" target="_blank">aqui</a>.
 
 {% highlight html linenos%}
 {% raw %}
@@ -55,7 +55,7 @@ Os exemplos acima  podem ser vistos no gist abaixo e/ou rodando <a href="https:
     <pre>Filtro date com parâmetro {{"1984-12-15T00:00" | date}} = {{ "1984-12-15T00:00" | date:'medium'}}</pre>
     <footer>
         <hr/>
-        <a href="http://www.gabrielfeitosa.com"> Blog do Gabriel Feitosa</a>
+        <a href="http://www.gabrielfeitosa.github.io"> Blog do Gabriel Feitosa</a>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
     <script src="app.js"></script>
@@ -70,7 +70,7 @@ Os exemplos acima  podem ser vistos no gist abaixo e/ou rodando <a href="https:
 
 Filtros também podem ser utilizados em controladores, serviços e diretivas. Para isso, precisamos do controle de **injeção de dependência**.
 
-Há duas maneiras de um filtro ser injetado, aqui você pode ver o <a href="https://gist.github.com/gabrielfeitosa/8e355c104cd781c9e39f#file-filter-controller-html" target="_blank">gist do html</a> e <a href="https://gabrielfeitosa.com/exemplos/angularjs/filter/filter-controller.html" target="_blank">aqui</a> você o vê rodando:
+Há duas maneiras de um filtro ser injetado, aqui você pode ver o <a href="https://gist.github.com/gabrielfeitosa/8e355c104cd781c9e39f#file-filter-controller-html" target="_blank">gist do html</a> e <a href="https://gabrielfeitosa.github.io/exemplos/angularjs/filter/filter-controller.html" target="_blank">aqui</a> você o vê rodando:
 
 {% highlight javascript linenos%}
 {% raw %}
@@ -143,7 +143,7 @@ Vamos criar dois filtros de exemplos:
 
 O filtro de formatação de CPF recebe um único parâmetro de entrada e dá como saída um CPF formatado no formato **xxx****.xxx.xxx-xx.** A syntax para utilização é {% raw %}**{{inputCPF &#124; cpf}}**{% endraw %}, como pode ser visto na **linha 13** do gist abaixo.
 
-O segundo filtro que criamos é o **abestado**. Muito útil para elogiar um grande amigo, ele recebe dois parâmetros de entrada. O primeiro é o **nome do amigo** e o segundo é se ele é **muito abestado ou não**. A syntax para utilização é **{% raw %}{{nomeDoAmigo &#124; abestado: param1}}{% endraw %}**, como pode ser visto na **linha 16** do gist abaixo. <a href="https://gabrielfeitosa.com/exemplos/angularjs/filter/filter-custom.html" target="_blank">Aqui</a> você pode ver o exemplo rodando<span style="color: #000000;">.</span>
+O segundo filtro que criamos é o **abestado**. Muito útil para elogiar um grande amigo, ele recebe dois parâmetros de entrada. O primeiro é o **nome do amigo** e o segundo é se ele é **muito abestado ou não**. A syntax para utilização é **{% raw %}{{nomeDoAmigo &#124; abestado: param1}}{% endraw %}**, como pode ser visto na **linha 16** do gist abaixo. <a href="https://gabrielfeitosa.github.io/exemplos/angularjs/filter/filter-custom.html" target="_blank">Aqui</a> você pode ver o exemplo rodando<span style="color: #000000;">.</span>
 
 {% highlight html linenos%}
 {% raw %}
@@ -166,7 +166,7 @@ O segundo filtro que criamos é o **abestado**. Muito útil para elogiar um gra
     <input type="checkbox" ng-model="muito"/> Seu amigo é muito abestado?
     <footer>
         <hr/>
-        <a href="http://www.gabrielfeitosa.com"> Blog do Gabriel Feitosa</a>
+        <a href="http://www.gabrielfeitosa.github.io"> Blog do Gabriel Feitosa</a>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
     <script src="app.js"></script>

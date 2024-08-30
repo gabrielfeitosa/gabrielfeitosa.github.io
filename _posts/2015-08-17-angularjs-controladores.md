@@ -16,7 +16,7 @@ comments: true
 ---
 Olá pessoal, beleza?
 
-No post anterior, [Introdução ao AngularJS](https://gabrielfeitosa.com/iniciando-com-angularjs/), fizemos uma explanação sobre algumas características importantes do AngularJS. Hoje vamos falar sobre os controladores e as boas práticas que podem ser adotadas em sua utilização.
+No post anterior, [Introdução ao AngularJS](https://gabrielfeitosa.github.io/iniciando-com-angularjs/), fizemos uma explanação sobre algumas características importantes do AngularJS. Hoje vamos falar sobre os controladores e as boas práticas que podem ser adotadas em sua utilização.
 
 # Entendendo os Controladores
 
@@ -32,7 +32,7 @@ Os Controladores (_Controllers_), como o próprio nome diz, são responsáveis 
    * __Compartilhar código__: para compartilhar estados ou dados com outros controladores devemos utilizar as [factories/services](https://docs.angularjs.org/guide/services).
 {: .notice}
 
-Vamos pegar o exemplo do post [Introdução ao AngularJS](https://gabrielfeitosa.com/iniciando-com-angularjs/) e adicionar o controlador, [aqui](https://gabrielfeitosa.com/exemplos/angularjs/controller1.html) você pode vê-lo rodando:
+Vamos pegar o exemplo do post [Introdução ao AngularJS](https://gabrielfeitosa.github.io/iniciando-com-angularjs/) e adicionar o controlador, [aqui](https://gabrielfeitosa.github.io/exemplos/angularjs/controller1.html) você pode vê-lo rodando:
 
 {% highlight html linenos %}
 <!DOCTYPE html>
@@ -53,7 +53,7 @@ Vamos pegar o exemplo do post [Introdução ao AngularJS](https://gabrielfeitosa
     </div>
     <footer>
         <hr>
-        <a href="http://www.gabrielfeitosa.com"> Blog do Gabriel Feitosa</a>
+        <a href="http://www.gabrielfeitosa.github.io"> Blog do Gabriel Feitosa</a>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
     <script>
@@ -75,7 +75,7 @@ Neste exemplo, criamos o controlador (**MeuController**) no módulo __app__, ut
 
 Quando queremos executar alguma ação na _view_, precisamos adicionar comportamento ao escopo. Antes disso, no entanto, é necessário anexar os métodos ao $scope. Assim, eles ficarão disponíveis para a camada de visão.
 
-O código abaixo pode ser visto rodando **[aqui](https://gabrielfeitosa.com/exemplos/angularjs/controller2.html)**.
+O código abaixo pode ser visto rodando **[aqui](https://gabrielfeitosa.github.io/exemplos/angularjs/controller2.html)**.
 
 {% highlight html linenos %}
 <!DOCTYPE html>
@@ -101,7 +101,7 @@ O código abaixo pode ser visto rodando **[aqui](https://gabrielfeitosa.com/exe
     </div>
     <footer>
         <hr/>
-        <a href="http://www.gabrielfeitosa.com"> Blog do Gabriel Feitosa</a>
+        <a href="http://www.gabrielfeitosa.github.io"> Blog do Gabriel Feitosa</a>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
     <script>
@@ -130,7 +130,7 @@ Para exibir os itens adicionados utilizamos a diretiva _[ng-repeat](https://docs
 
 Quando adicionamos os controllers em hierarquias, um dentro do outro, temos uma herança de escopos. Isso acontece porque a diretiva _ng-controller_ cria um novo $scope **filho**, então o $scope que cada controlador recebe terá acesso aos métodos e atributos do controlador acima na hierarquia.
 
-O código abaixo pode ser visto rodando **[aqui](https://gabrielfeitosa.com/exemplos/angularjs/controller_heranca.html)**
+O código abaixo pode ser visto rodando **[aqui](https://gabrielfeitosa.github.io/exemplos/angularjs/controller_heranca.html)**
 
 {% highlight html linenos %}
 <!DOCTYPE html>
@@ -162,7 +162,7 @@ O código abaixo pode ser visto rodando **[aqui](https://gabrielfeitosa.com/exe
         </div>
         <footer>
             <hr/>
-            <a href="http://www.gabrielfeitosa.com"> Blog do Gabriel Feitosa</a>
+            <a href="http://www.gabrielfeitosa.github.io"> Blog do Gabriel Feitosa</a>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
         <script>
